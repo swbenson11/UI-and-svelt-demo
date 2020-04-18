@@ -1,6 +1,6 @@
 # Smart Access Technical Assessment
 
-### Assigment
+### Assignment
 
 You are required to develop a simple onboarding screen flow; one being the slider with three slider options. Once the user clicks finish, the _screen fades, or slides away_ to reveal the welcome page that instructs them to tap a tag. Each of the onboarding screens should be its own component, where you use events or some kind of pubsub architecture to communicate between the two screens. (This is not a page navigation, rather a state change/component transition).
 
@@ -48,6 +48,6 @@ You can run the newly built app with npm run start
 
 I started with this [template](https://github.com/sveltejs/template).
 
-As per the email I designed this for a mobile environment. I just just Chrome's device toolbar to toggle a mobile resolution when developing.
+As per the email I designed this for a mobile environment. I just used Chrome's device toolbar to toggle a mobile resolution when developing.
 
-Email said, "Only tapping reader will bring up the reader", but the design has a button to show reader, so I made both show the reader. Email also lacked a reader icon. I had to install a program that could read the .sketch files to get it
+The email said, "Only tapping reader will bring up the reader", but the design has a button to show reader. So I made both show the reader. This project is lacking tests. Since this is a new framework to me and wasn’t logic heavy I decided to forgo them. If this was on the job I would try and include some, especially for my generic UI components.
