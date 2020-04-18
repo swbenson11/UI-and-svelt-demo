@@ -5,10 +5,6 @@
   let showOnboardingScreen = true;
 </script>
 
-<style src="./Css/Variables.scss">
-
-</style>
-
 <main>
   {#if showOnboardingScreen}
     <Onboarding

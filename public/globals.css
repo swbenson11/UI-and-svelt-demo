@@ -1,19 +1,3 @@
-/* Globals */
-/* I know these can be done with Scss, but I was having a hard time */
-/* Getting them to be build then shared amoungst my svelte components */
-
-:root {
-  --color-secondary: #ff3266;
-  --color-primary: #2b8dff;
-  --color-dark: #1c202f;
-
-  --color-white: #ffffff;
-  --color-black: #000000;
-
-  --color-background: #f8f8f8;
-  --color-background-dark: #060a1b;
-}
-
 html,
 body,
 main {

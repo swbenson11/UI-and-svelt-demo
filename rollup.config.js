@@ -4,7 +4,19 @@ import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import babel from 'rollup-plugin-babel';
-import autoPreprocess from 'svelte-preprocess';
+import sveltePreprocess from 'svelte-preprocess';
+
+const options = {
+  postcss: {
+    plugins: [
+      // import and url url are not required for this project, but would be handy in future work.
+      require('postcss-import'), // plugin to transform @import rules by inlining content. https://github.com/postcss/postcss-import
+      require('postcss-url'), // PostCSS plugin to rebase, inline or copy on url()
+      // autoprefixer gets browserlist from package.json
+      require('autoprefixer'),
+    ],
+  },
+};
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -17,27 +29,9 @@ export default {
     file: 'public/build/bundle.js',
   },
   plugins: [
-    // //Sass into css
-    // postcss({
-    //   extract: 'public/material.css',
-    //   minimize: production,
-    //   use: [
-    //     [
-    //       'sass',
-    //       {
-    //         includePaths: [
-    //           // styles folder contains the necessary "_smui-theme.scss" file.
-    //           './src/**',
-    //         ],
-    //       },
-    //     ],
-    //   ],
-    // }),
-    //Css file into svelte components
-    // css({ output: 'public/build/extra.css' }), // TODO move?
-    //Svelte into JS
     svelte({
-      preprocess: autoPreprocess(),
+      preprocess: sveltePreprocess(options),
+
       // enable run-time checks when not in production
       dev: !production,
       // we'll extract any component CSS out into
@@ -58,16 +52,9 @@ export default {
     }),
     commonjs(),
 
-    // //Run sass and autoprefixer
-    // sass({
-    //   processor: (css) =>
-    //     postcss([autoprefixer])
-    //       .process(css)
-    //       .then((result) => result.css),
-    // }),
-
     //run babel
     //production &&
+    // I think this is running es2015 (es6), it makes lets for me
     babel({
       exclude: [
         // 'node_modules/**',

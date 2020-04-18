@@ -24,8 +24,9 @@
 </style>
 
 <div class="mainScreen screen">
-  <img src="images/logo-color.png" alt="Smart Access" class="top-logo" />
-
+  <div style="display:block">
+    <img src="images/logo-color.png" alt="Smart Access" class="top-logo" />
+  </div>
   <img
     src="images/reader.png"
     alt="Phone"

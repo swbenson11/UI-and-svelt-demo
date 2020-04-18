@@ -48,6 +48,8 @@ You can run the newly built app with npm run start
 
 I started with this [template](https://github.com/sveltejs/template).
 
+As per the email I designed this for a mobile environment. I just just Chrome's device toolbar to toggle a mobile resolution when developing.
+
 Email said, "Only tapping reader will bring up the reader", but the design has a button to show reader, so I made both show the reader. Email also lacked a reader icon. I had to install a program that could read the .sketch files to get it
 
 ## Areas that could be improved
