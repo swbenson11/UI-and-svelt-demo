@@ -1,0 +1,40 @@
+
+ReadME
+
+Add to git
+
+Remove unneeded imports
+
+remove notes
+
+get size down.
+
+look for todos.
+
+Add dots
+
+
+remove variables
+
+
+Add Reader need to exsist
+
+Clicking about smart access should slide up and show an iframe with smartaccess.io inside
+
+reacctivate  autoprefixer
+
+Once the user clicks finish, the *screen fades, or slides away*
+  - skip should go to screen 4
+
+
+
+Notes:
+
+Areas that could be improved
+
+  - spacing of elements could be better managed, maybe with a grid system.
+
+Email said:
+ Only tapping reader will bring up the reader
+But the reader has a button to show reader, so I made it so both show reader.
+

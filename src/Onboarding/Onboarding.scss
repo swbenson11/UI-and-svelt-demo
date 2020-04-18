@@ -1,0 +1,23 @@
+.onboarding {
+  // This was the closest I got to getting Scss working globally
+  background-color: var(--color-background-dark);
+  color: var(--color-white);
+  text-align: center;
+  min-height: 100%;
+  overflow: scroll;
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}
