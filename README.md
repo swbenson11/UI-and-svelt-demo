@@ -1,6 +1,6 @@
 # Smart Access Technical Assessment
 
-### Background
+### Assigment
 
 You are required to develop a simple onboarding screen flow; one being the slider with three slider options. Once the user clicks finish, the _screen fades, or slides away_ to reveal the welcome page that instructs them to tap a tag. Each of the onboarding screens should be its own component, where you use events or some kind of pubsub architecture to communicate between the two screens. (This is not a page navigation, rather a state change/component transition).
 
@@ -9,7 +9,7 @@ All the assets required can be found linked to this email. Included below are sk
 ### The Challenge
 
 - The result (not including images) to be no more than 50 kb. (hint: there is a tiny swipe library available online that is 2kb)
-- Use a bundler (webpack, rollup) to bunde the code via npm run build command for a packaged dist folder
+- Use a bundler (webpack, rollup) to bundle the code via npm run build command for a packaged dist folder
 - This should work on mobile view. No need to make work for desktop.
 - Make sure to use latest css3 (sass, preferably) and an autoprefixer for browser compatibility.
 - Use babel to compile production code down to es2015 script for back browser compatibility
@@ -51,9 +51,3 @@ I started with this [template](https://github.com/sveltejs/template).
 As per the email I designed this for a mobile environment. I just just Chrome's device toolbar to toggle a mobile resolution when developing.
 
 Email said, "Only tapping reader will bring up the reader", but the design has a button to show reader, so I made both show the reader. Email also lacked a reader icon. I had to install a program that could read the .sketch files to get it
-
-## Areas that could be improved
-
-- Spacing of elements could be better managed, maybe with a grid system.
-- Slider should have been wrapped and turned into a UI component.
-- Test should be added, but this is a new language to me.
