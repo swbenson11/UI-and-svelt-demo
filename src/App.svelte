@@ -3,13 +3,14 @@
   import MainScreen from "./MainScreen/MainScreen.svelte";
 
   let showOnboardingScreen = true;
+  let opacity = 1;
 
   const runTransition = () => {
-    document.getElementById("fade-out-div").style.opacity = "0";
+    opacity = 0;
 
     setTimeout(() => {
       showOnboardingScreen = false;
-      document.getElementById("fade-out-div").style.opacity = "1";
+      opacity = 1;
     }, 300);
   };
 </script>
@@ -19,7 +20,7 @@
 </style>
 
 <main>
-  <div id="fade-out-div" class="fade-out-div">
+  <div id="fade-out-div" class="fade-out-div" style="opacity: {opacity}">
     {#if showOnboardingScreen}
       <Onboarding hideFunction={runTransition} />
     {:else}
