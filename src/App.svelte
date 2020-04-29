@@ -3,15 +3,14 @@
   import MainScreen from "./MainScreen/MainScreen.svelte";
 
   let showOnboardingScreen = true;
-  let opacity = 1;
+  let animation = "";
 
   const runTransition = () => {
-    opacity = 0;
+    animation = "animation: fade-out-and-in 800ms";
 
     setTimeout(() => {
       showOnboardingScreen = false;
-      opacity = 1;
-    }, 300);
+    }, 400);
   };
 </script>
 
@@ -20,7 +19,7 @@
 </style>
 
 <main>
-  <div id="fade-out-div" class="fade-out-div" style="opacity: {opacity}">
+  <div id="fade-out-div" class="fade-out-div" style="{animation}">
     {#if showOnboardingScreen}
       <Onboarding hideFunction={runTransition} />
     {:else}
