@@ -2,7 +2,7 @@
 
 ## Demo of Project
 
-![Demo](Demo.gif)
+<img src="demo.gif" height="500">
 
 ### Assignment
 
